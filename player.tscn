@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://uletoijdj5pe"]
+
+[ext_resource type="Texture2D" uid="uid://do71tv7c07ctw" path="res://Free/Main Characters/Ninja Frog/Idle (32x32).png" id="1_6v1vw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_72mop"]
+radius = 7.0
+height = 20.0
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_6v1vw")
+hframes = 11
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+shape = SubResource("CapsuleShape2D_72mop")
