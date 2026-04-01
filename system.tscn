@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://poe2fusa6mkf"]
+[gd_scene load_steps=2 format=3 uid="uid://poe2fusa6mkf"]
+
+[ext_resource type="PackedScene" uid="uid://d0hikqh42srv" path="res://level.tscn" id="1_smb4e"]
 
 [node name="System" type="Node2D"]
+
+[node name="Level" parent="." instance=ExtResource("1_smb4e")]
